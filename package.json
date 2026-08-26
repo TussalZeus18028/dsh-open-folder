@@ -1,6 +1,6 @@
 {
   "name": "dsh-open-folder",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Add an \"Open folder\" entry to the workspace session row overflow (⋯) menu; opens the session's workspace folder with the host OS.",
   "license": "MIT",
   "homepage": "https://github.com/TussalZeus18028/dsh-open-folder#readme",

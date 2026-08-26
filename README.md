@@ -10,14 +10,14 @@ Adds an **Open folder** item to the **⋯** overflow menu of session rows in the
 
 ![session-row menu](assets/screenshots/menu.png)
 
-![settings diagnostics page](assets/screenshots/settings.png)
+![settings page](assets/screenshots/settings.png)
 
 ## 功能 / Features
 
 - 会话行 ⋯ 菜单（重命名 / 分叉会话 / 归档会话）末尾新增「打开文件夹」。
 - 菜单项复用现有菜单项的样式类，跟随主题、支持键盘操作。
 - 自动跟随界面语言（中文界面显示「打开文件夹」，英文界面显示 "Open folder"，错误提示同样本地化）。
-- **设置页诊断栏目**：设置 →「打开文件夹」分节，显示宿主能力状态、最近事件日志（每次菜单注入、解析路径、RPC 结果、错误）、错误记录，以及「测试打开当前会话文件夹」按钮 —— 菜单项未出现或点击无反应时，可在此直接看到原因。
+- **设置页说明栏目**：设置 →「打开文件夹」分节，展示使用说明与最近打开的路径。
 - **成功确认提示**：打开成功后右下角显示「已打开文件夹：<路径>」（远程访问/宿主机打开时也能确认操作成功）。
 - **中文路径可靠打开**：内置 `host.openPath` 的 Windows 实现通过 `powershell.exe Invoke-Item` 打开目录，对含中文的路径（如 `E:\Launcher\服务器\...`）会"返回成功但资源管理器不弹出"。插件宿主半新增专属打开端点（`POST /plugins/dsh-open-folder/open`），直接用 `explorer.exe`（UTF-16 参数，中文路径可靠）打开；客户端优先走该端点，端点不可用时回退内置 RPC。
 - **深浅主题适配**：设置页按钮/卡片/提示全部使用真实存在的 `--dsw-alias-*` 主题令牌，浅色/深色主题下均正常显示。

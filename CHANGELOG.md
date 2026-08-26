@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.5.0 (2026-08-26)
+
+- **Product-style settings page**: the Settings → Open folder section is now a concise usage note with the last opened path; the developer-style diagnostics (version, capability status, event log, error history, test button) are no longer shown (diagnostics recording stays in place for future troubleshooting).
+- `useState` no longer used by the settings component.
+
 ## v0.4.0 (2026-08-26)
 
 - **Chinese paths open reliably**: plugin-native `POST /plugins/dsh-open-folder/open` endpoint spawns `explorer.exe` directly (UTF-16 argv), fixing the built-in `host.openPath` Windows opener (`powershell.exe Invoke-Item`) which returns success without surfacing a window for non-ASCII paths. Client prefers the endpoint and falls back to the built-in RPC.
