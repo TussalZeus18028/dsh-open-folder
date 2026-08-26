@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.7.0 (2026-08-26)
+
+- **Modern settings page redesign**: hero header (icon + title + subtitle), icon-led feature cards with an "Active" badge and feature tags, a refined toggle switch, and a dedicated last-opened card — all theme-token based for light/dark skins.
+- Switch "on" state uses the success color and a white knob with a subtle border so it stays visible under every skin (some skins define the brand color as white).
+
 ## v0.6.0 (2026-08-26)
 
 - **Toast notification switch**: Settings → Folder tools now has a "Show notifications" toggle (persisted in localStorage); when off, the bottom-right success/error toasts are suppressed (events are still logged internally).
