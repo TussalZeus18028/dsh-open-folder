@@ -1,0 +1,5 @@
+# dsh-open-folder bundle patch: enable the loader entry so the web profile
+# activates this plugin (host half) and serves its client half bundle.
+- insert:
+    - id: dsh-open-folder
+      name: dsh-open-folder
