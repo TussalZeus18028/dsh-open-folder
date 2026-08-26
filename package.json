@@ -30,8 +30,10 @@
   "keywords": [
     "dsh",
     "deepseek-harness",
+    "dsh-plugin",
     "workspace",
-    "open-folder"
+    "open-folder",
+    "file-explorer"
   ],
   "dsh": {
     "bundle": {
