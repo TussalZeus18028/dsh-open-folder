@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.0 (2026-08-26)
+
+- **Toast notification switch**: Settings → Folder tools now has a "Show notifications" toggle (persisted in localStorage); when off, the bottom-right success/error toasts are suppressed (events are still logged internally).
+- **Settings section renamed**: "打开文件夹 / Open folder" → "文件夹工具 / Folder tools", making the section a home for future folder/workspace tools.
+
 ## v0.5.0 (2026-08-26)
 
 - **Product-style settings page**: the Settings → Open folder section is now a concise usage note with the last opened path; the developer-style diagnostics (version, capability status, event log, error history, test button) are no longer shown (diagnostics recording stays in place for future troubleshooting).
