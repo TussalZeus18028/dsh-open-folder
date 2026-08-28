@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.8.0 (2026-08-28)
+
+- **Settings panel scrollbar fix moved here**: the nav-list scrollbar fix (previously living inside `dsh-conflict-checker`, where it was unrelated to conflict checking) is now a Folder tools setting. A new "设置面板滚动条修复 / Settings panel scrollbar fix" card with an on/off switch (persisted in localStorage) applies the nav-list scrollbar to the settings panel; off reverts the page to native state immediately.
+
 ## v0.7.0 (2026-08-26)
 
 - **Modern settings page redesign**: hero header (icon + title + subtitle), icon-led feature cards with an "Active" badge and feature tags, a refined toggle switch, and a dedicated last-opened card — all theme-token based for light/dark skins.
